@@ -238,9 +238,9 @@ One of the outdated plugins grabs our attention: wp-user-avatar. According to th
 + https://www.cybersecurity-help.cz/vdb/SB2021081401
 
 
-## 8. Exploit (CVE-2021-34621)[https://www.exploit-db.com/exploits/50242]
+## 8. Exploit [CVE-2021-34621](https://www.exploit-db.com/exploits/50242)
 
-This exploit (CVE-2021-34621)[https://www.exploit-db.com/exploits/50242] is a very simple bash code that requires a basic level of bash understanding. It’s not yet available on metasploit database, which means you will have to understand it in order to execute it. 
+This exploit [CVE-2021-34621](https://www.exploit-db.com/exploits/50242) is a very simple bash code that requires a basic level of bash understanding. It’s not yet available on metasploit database, which means you will have to understand it in order to execute it. 
 Basically it helps you to create an admin user in the wordpress installation. 
 
 In the attacker machine, creates a script.sh file with this content:
@@ -288,7 +288,7 @@ If you have defined different user and password credentials, use them instead of
 
 ## 10. Launch a reverse shell.
 
-Wordpress is written in php. We could use the php reverse shell of pentesmonkey. Get it from (Pentestmonkey Github)[https://github.com/pentestmonkey/php-reverse-shell]. In my case, my shell would be this code (IP and port are customized). 
+Wordpress is written in php. We could use the php reverse shell of pentesmonkey. Get it from [Pentestmonkey Github](https://github.com/pentestmonkey/php-reverse-shell). In my case, my shell would be this code (IP and port are customized). 
 
 ```
 
@@ -451,7 +451,7 @@ Now, from your attacker machine, run:
 nc -lnvp 12345
 ```
 
-And, in the browser go to a page that you know that calls the template in which you have saved your php reverse shell. In my case, having used single.php, I can browse to: http://192.168.57.3/womenhackers/carol-shaw/ to launch my reverse shell.
+And, in the browser go to a page that you know that calls the template in which you have saved your php reverse shell. In my case, having used singular.php, I can browse to: http://192.168.57.3/womenhackers/carol-shaw/ to launch my reverse shell.
 
 ## 11. Get user.txt flag
 
@@ -502,7 +502,7 @@ We can see the suid bit enabled:
 -rwsr-xr-x 1 root root 286184 Jul 14  2021 /bin/find
 ```
 
-Knowing this, we can escalate privileges. (This web provides you with some resources to exploit suid bit)[https://gtfobins.github.io/gtfobins/find/]. Run:
+Knowing this, we can escalate privileges. [This web provides you with some resources to exploit suid bit](https://gtfobins.github.io/gtfobins/find/). Run:
 
 ```bash
 sudo find . -exec /bin/sh \; -quit
@@ -520,5 +520,4 @@ Now we can echo root.txt
 ```bash
 cat /root/root.txt
 ```
-
 
