@@ -1,7 +1,7 @@
 # Womenhackers is a penetration tester lab 
 ![](https://github.com/amandaguglieri/womenhackers/blob/main/womenhackers.png)
 
-This lab is intended to practise these skills: enumeration, service scanners, web exploitation, privileges scalation. 
+This lab is intended to practice these skills: enumeration, service scanners, web exploitation, and privileges scalation. 
 
 Level: Super easy. Initiation.
 
